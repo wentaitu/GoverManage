@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/login_back"
+        app:constraint_referenced_ids="register_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/register_pic"
+        android:layout_width="119dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/homeplant"
+        app:layout_constraintBottom_toTopOf="@+id/register_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/register_txt"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:hint="@string/input_pwd2"
+        android:textSize="18sp"
+        android:inputType="textWebPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pwd" />
+
+    <EditText
+        android:id="@+id/register_tverify_code"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_verify_code"
+        android:drawablePadding="10dp"
+        android:hint="请输入验证码"
+        android:inputType="numberSigned"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/register_txt"
+        app:layout_constraintTop_toBottomOf="@+id/register_txt" />
+
+    <EditText
+        android:id="@+id/register_id"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/ic_account"
+        android:drawablePadding="10dp"
+        android:hint="@string/input_id"
+        android:inputType="numberSigned"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/group"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <EditText
+        android:id="@+id/register_pwd"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:hint="@string/input_pwd"
+        android:inputType="textWebPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_id" />
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/login_normal"
+        android:text="@string/register_btn"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_tverify_code" />
+
+    <Button
+        android:id="@+id/btn_verify_code"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_normal"
+        android:text="发送短信"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/register_tverify_code"
+        app:layout_constraintStart_toEndOf="@+id/register_tverify_code"
+        app:layout_constraintTop_toBottomOf="@+id/register_txt"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/btn_verify_code2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/login_normal"
+        android:text="验证"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_verify_code"
+        app:layout_constraintEnd_toEndOf="@+id/register_txt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_verify_code"
+        app:layout_constraintTop_toTopOf="@+id/btn_verify_code" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="发送短信->填写验证码->点击验证->注册"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn" />
+
+
+</android.support.constraint.ConstraintLayout>

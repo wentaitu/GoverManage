@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#757575</color>
+    <color name="colorPrimary">#757575</color>
+    <color name="colorPrimaryDark">#696969</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">140dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
+    <string name="app_name">小助手</string>
+    <string name="cancel">取消</string>
+    <string name="data">今天</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="fl">风力</string>
+    <string name="fx">风向</string>
+    <string name="high">最高温</string>
+    <string name="humi">湿度</string>
+    <string name="low">最低温</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="notice">注意</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="notifyTitle">提示</string>
+    <string name="pm10">PM10</string>
+    <string name="pm25">PM2.5</string>
+    <string name="present">当前</string>
+    <string name="qual">空气质量指数</string>
+    <string name="setting">设置</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="temp">温度</string>
+    <string name="tips">提示</string>
+    <string name="type">天气</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+</style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

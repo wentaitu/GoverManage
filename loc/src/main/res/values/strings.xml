@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">小助手</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="temp">温度</string>
+    <string name="humi">湿度</string>
+    <string name="qual">空气质量指数</string>
+    <string name="pm25">PM2.5</string>
+    <string name="pm10">PM10</string>
+    <string name="tips">提示</string>
+
+    <string name="present">当前</string>
+    <string name="data">今天</string>
+    <string name="type">天气</string>
+    <string name="high">最高温</string>
+    <string name="low">最低温</string>
+    <string name="sunrise">日出</string>
+    <string name="sunset">日落</string>
+    <string name="fx">风向</string>
+    <string name="fl">风力</string>
+    <string name="notice">注意</string>
+
+
+</resources>
